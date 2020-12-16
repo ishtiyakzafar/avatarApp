@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="main_div">
+			<h1 class="text-center">who are you?</h1>
+			<div class="center_div">
+				<div class="inner_div">
+					<h3>enter your name</h3>
+					<input id="demo" type="text" autocomplete="off"  name="">
+					<img src="https://joeschmoe.io/api/v1/random" alt="avatar" id="demo1">
+					<button  onclick="btn()">click me</button>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			const btn = () => {
+				const name = document.getElementById('demo').value;
+				if(name==''){
+					alert('enter name')
+				}else{
+					const img = document.getElementById('demo1');
+					img.setAttribute("src",`https://joeschmoe.io/api/v1/${name}`);
+				}
+			}
+		</script>
+	</body>
+</html>

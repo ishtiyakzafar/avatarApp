@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    
+}
+.main_div{
+	width: 100%;
+	height:100vh; 
+	display: flex;
+	background: #32ff7e;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.main_div h1{
+	text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+	font-family: 'Luckiest Guy', cursive;
+	letter-spacing: 3px;
+}
+.center_div{
+	width: 60%;
+	height:70%; 
+	background: #3d3d3d;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 5px solid #fff;
+}
+
+.inner_div{
+	 
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	
+}
+.inner_div h3{
+	color: rgba(0,0,0,0.6);
+	font-family: 'Luckiest Guy', cursive;
+	  text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
+}
+.inner_div img{
+	width: 225px;
+	height: 200px;
+}
+.inner_div input{
+	font-size: 30px;
+	font-family: 'Ubuntu Mono', monospace;
+	width: 225px;
+	background: #ff5e57;
+	height: 50px;
+	outline: none;
+}
+.inner_div button{
+	width: 225px;
+	background: #575fcf;
+	height: 50px;
+	font-family: 'Ubuntu Mono', monospace;
+	font-size: 30px;
+	outline: none;
+	color: #fff;
+	border: none;
+
+
+}
+
+@media(max-width: 768px){
+	.center_div{
+	width: 85%;
+}
+}
